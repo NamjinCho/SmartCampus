@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/l3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/find_classroom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#080533"
+        android:gravity="center"
+        android:padding="0sp"
+        android:text="강의실 찾기"
+        android:textColor="#ffffffff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/favorite_list"
+        android:layout_below="@id/find_classroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/favorite"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/favorite_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:paddingLeft="10dp"
+            android:text="즐겨찾는 건물"
+            android:textColor="#080533"
+            android:textSize="9pt"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/favorite_class_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/class_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/favorite_list"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+</RelativeLayout>

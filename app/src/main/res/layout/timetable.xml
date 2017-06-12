@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/stack"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#080533"
+        android:gravity="center"
+        android:padding="0sp"
+        android:text="시간표"
+        android:textColor="#ffffffff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    //월화수목금
+
+    <LinearLayout
+        android:id="@+id/yline"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:background="#ffffffff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/row10"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="10.0"
+            android:background="#ff3c454e"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:shadowColor="#ff0f0f0f"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:text=""
+                android:textColor="#ff000000"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row11"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="20.0"
+            android:background="#ff3c454e"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:shadowColor="#ff0f0f0f"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:text="월요일"
+                android:textColor="#ffffffff"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row12"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="20.0"
+            android:background="#ff3c454e"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:shadowColor="#ff0f0f0f"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:text="화요일"
+                android:textColor="#ffffffff"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row13"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="20.0"
+            android:background="#ff3c454e"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text13"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:shadowColor="#ff0f0f0f"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:text="수요일"
+                android:textColor="#ffffffff"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row14"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="20.0"
+            android:background="#ff3c454e"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text14"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:shadowColor="#ff0f0f0f"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:text="목요일"
+                android:textColor="#ffffffff"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row15"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="20.0"
+            android:background="#ff3c454e"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text15"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:shadowColor="#ff0f0f0f"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:text="금요일"
+                android:textColor="#ffffffff"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scr1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0px"
+        android:layout_weight="1.0"
+        android:fadingEdge="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/mainlinear"
+            android:layout_width="fill_parent"
+            android:layout_height="500.0dip"
+            android:background="#ffffffff"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/col0"
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="10.0"
+                android:background="#ffd6d7dc"
+                android:orientation="vertical">
+                //8~23시간
+
+                <LinearLayout
+                    android:id="@+id/row01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/time_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text001"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ff0f0f0f"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="8"
+                        android:textColor="#ffaeb3c7"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/time_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text002"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ff0f0f0f"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="9"
+                        android:textColor="#ffaeb3c7"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/time_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text003"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ff0f0f0f"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="10"
+                        android:textColor="#ffaeb3c7"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row04"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/time_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text004"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ff0f0f0f"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="11"
+                        android:textColor="#ffaeb3c7"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row05"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/time_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text005"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ff0f0f0f"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="12"
+                        android:textColor="#ffaeb3c7"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row06"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/time_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text006"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ff0f0f0f"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="13"
+                        android:textColor="#ffaeb3c7"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row07"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/time_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text007"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ff0f0f0f"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="14"
+                        android:textColor="#ffaeb3c7"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row08"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/time_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text008"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ff0f0f0f"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="15"
+                        android:textColor="#ffaeb3c7"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row09"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/time_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text009"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ff0f0f0f"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="16"
+                        android:textColor="#ffaeb3c7"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row010"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/time_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text010"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ff0f0f0f"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="17"
+                        android:textColor="#ffaeb3c7"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row011"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/time_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text011"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ff0f0f0f"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="18"
+                        android:textColor="#ffaeb3c7"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row012"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/time_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text012"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ff0f0f0f"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="19"
+                        android:textColor="#ffaeb3c7"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row013"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/time_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text013"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ff0f0f0f"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="20"
+                        android:textColor="#ffaeb3c7"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row014"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/time_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text014"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ff0f0f0f"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="21"
+                        android:textColor="#ffaeb3c7"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row015"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/time_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text015"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ff0f0f0f"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="22"
+                        android:textColor="#ffaeb3c7"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row016"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/time_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text016"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ff0f0f0f"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="23"
+                        android:textColor="#ffaeb3c7"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+            //월요일
+
+            <LinearLayout
+                android:id="@+id/col1main"
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="20.0"
+                android:background="#ffffffff"
+                android:orientation="vertical">
+
+            </LinearLayout>
+            //화요일
+
+            <LinearLayout
+                android:id="@+id/col2main"
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="20.0"
+                android:background="#ffffffff"
+                android:orientation="vertical">
+
+            </LinearLayout>
+            //수요일
+
+            <LinearLayout
+                android:id="@+id/col3main"
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="20.0"
+                android:background="#ffffffff"
+                android:orientation="vertical">
+
+            </LinearLayout>
+            //목요일
+
+            <LinearLayout
+                android:id="@+id/col4main"
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="20.0"
+                android:background="#ffffffff"
+                android:orientation="vertical">
+
+            </LinearLayout>
+            //금요일
+
+            <LinearLayout
+                android:id="@+id/col5main"
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="20.0"
+                android:background="#ffffffff"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
